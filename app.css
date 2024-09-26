@@ -8,6 +8,8 @@ html {
 
 body {
   margin: 0;
+  padding: 2rem;
+  background-color: rgb(238, 238, 218);
 }
 
 label,

@@ -12,7 +12,7 @@ function autobind(_1, _2, descriptor) {
         get() {
             const boundFn = originalMethod.bind(this);
             return boundFn;
-        }
+        },
     };
     return adjDescriptor;
 }
@@ -33,7 +33,9 @@ class ProjectInput {
         const enteredTitle = this.titleInputElement.value;
         const enteredDescription = this.descriptionInputElement.value;
         const enteredPeople = this.peopleInputElement.value;
-        if (enteredTitle.trim().length === 0 || enteredDescription.trim().length === 0 || enteredPeople.trim().length === 0) {
+        if (enteredTitle.trim().length === 0 ||
+            enteredDescription.trim().length === 0 ||
+            enteredPeople.trim().length === 0) {
             alert('invalid input');
             return;
         }
